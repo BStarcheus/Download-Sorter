@@ -9,7 +9,7 @@ for file in "$@"; do
 
         for keyStr in "${keyStrings[@]}"; do
             if [[ $filename == *"$keyStr"* ]]; then
-                mv $file $moveDest$filename
+                mv "$file" "$moveDest$filename"
                 break 2
             fi
         done
